@@ -223,8 +223,8 @@ def main_loop():
     
     if STATE == 'wait_to_start_am':
         timer.start()
-        startHour = AM_START_H        # 目标小时
-        startMinute = AM_START_M      # 目标分钟
+        startHour = AM_START_H        # target time hour
+        startMinute = AM_START_M      # target time min
 
         print('wait to start AM:')
         ready = wait_to_start(startHour, startMinute)
@@ -243,8 +243,8 @@ def main_loop():
         
     elif STATE == 'wait_to_start_pm':
         timer.start()
-        startHour = PM_START_H       # 目标小时
-        startMinute = PM_START_M      # 目标分钟
+        startHour = PM_START_H       # target time hour
+        startMinute = PM_START_M      # target time min
 
         print('wait to start PM:')
         ready = wait_to_start(startHour, startMinute)
